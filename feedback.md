@@ -1,1 +1,1 @@
-Example feedback file for final work
+I succesfully submit my files to GitHub! I am so glad. And the practical guidence is detailed. Only one thing I am confused about: I used my friends' computer. Though I already log in my account(Li-intl) in his vscode, the files I submitted still showed that it is submitted by Lv-steve(my friend's account). I am working on this tiny problem, maybe I have misunderstood some steps.
