@@ -1,5 +1,4 @@
 This is an example file for reflection in IBI1_2025-26.
 
 During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
-
-I was able to edit this file to show changes in the lecture
+ reflection : it is a nice try for me to learn how to use vscode. but i still have some problems submitting my files.
