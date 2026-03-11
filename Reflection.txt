@@ -3,3 +3,6 @@ This is an example file for reflection in IBI1_2025-26.
 During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
  reflection : it is a nice try for me to learn how to use vscode. but i still have some problems submitting my files.
 and I used my friends' computer, so that in GitHub I can find "Lv-steve"(my friend's GitHub name).
+
+ 2026/3/11
+it is meaningful to cooperate with my classmate! I acted both "driver" and "navigator". I think we may need more coopration. but all in all, it is a nice work. our cooperation makes it easier to work on the project!
