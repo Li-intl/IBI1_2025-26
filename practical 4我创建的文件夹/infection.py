@@ -1,4 +1,4 @@
-day=float(0)
+day=float(0)# is it okay that the start day is day 0?
 rate=float(0.4)#rate is 40%
 number=float(5)#it is "at the beginning, the number of student who is infected"
 all=float(91)# all is that in IBI1 there are 91 students.
