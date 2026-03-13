@@ -10,7 +10,7 @@ all=float(91)# all is that in IBI1 there are 91 students.
 #and the infection number cannot larger that the students number.
 while number<91:
     number=number*(1+rate)
-    day+=1
+    day+=1 #after one caculation that means one day went.
     if number>all:
         number=all#infected students can not be more than all student.
     print("day:"+ str(day), "infection number"+ str(number))
