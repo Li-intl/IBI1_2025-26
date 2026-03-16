@@ -13,4 +13,3 @@ if 0<age<100 and 20<weight<80 and 0<Cr<100 and (gender=="male" or "female"):#if 
         print("CrCl is "+ str(CrCl))
 else:
     print("input variable needs corrected")
-    
