@@ -5,7 +5,7 @@ print(matplotlib.__version__)
 # and the online vedio told that "as plt" can help me save time so that I do not need print matplotlib for each time.
 import numpy
 # create dictionary{geneexpression}
-geneexpression={"TP53":8.2,"EGFR":9.5,"ALK":7.8,"BRAF":10.1,"KRAS":6.9}
+geneexpression={"TP53":12.4,"EGFR":15.1,"ALK":8.2,"BRAF":10.7,"KRAS":6.9}
 #add MYC
 geneexpression["MYC"]=11.6
 #print(geneexpression)
