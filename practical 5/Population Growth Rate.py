@@ -13,3 +13,27 @@ print(f"here are the growth rate of different countries in order: {sortRATE}")
 most=max(sortRATE,key=sortRATE.get)
 least=min(sortRATE,key=sortRATE.get)
 print(f"{most} has the largest population,{least} has the minimum population")
+#i think maybe use dictionary{sortRATE} I set before to pick up the "most" and "least" is better. but it happened some probelms when i was coding. so finally I use this "stupid" way (which I have used in "Heart Rate Analysis")
+countries=[]
+change_rates=[]
+for country,changerate in sortRATE.items():
+    countries.append(country)
+    change_rates.append(changerate)
+plt.figure(figsize=(10,10))
+bars = plt.bar(countries, change_rates, color=['green' if r > 0 else 'red' for r in change_rates])
+
+
+plt.title('Population Percentage Change (2020-2024)')
+plt.xlabel('Country')
+plt.ylabel('Percentage Change (%)')
+plt.xticks(rotation=45)
+plt.grid(axis='y',linestyle='--',alpha=0.7) 
+#following 7 lines(32-38) are AI help generated, and I have learnt it.
+for bar in bars:
+    height=bar.get_height()
+    va='bottom' if height > 0 else 'top'
+    label=f"{height:.2f}%"
+    plt.text(bar.get_x()+bar.get_width()/2.,height,label,
+             ha='center', va=va, fontsize=10)
+plt.tight_layout()
+plt.show()
