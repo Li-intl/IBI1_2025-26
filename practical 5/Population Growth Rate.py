@@ -33,7 +33,6 @@ for bar in bars:
     height=bar.get_height()
     va='bottom' if height > 0 else 'top'
     label=f"{height:.2f}%"
-    plt.text(bar.get_x()+bar.get_width()/2.,height,label,
-             ha='center', va=va, fontsize=10)
+    plt.text(bar.get_x()+bar.get_width()/2.,height,label,ha='center', va=va, fontsize=10)
 plt.tight_layout()
 plt.show()

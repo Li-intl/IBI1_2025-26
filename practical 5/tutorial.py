@@ -10,3 +10,6 @@ for i in dailysleep:
     average=numpy.mean(caculatelist)
     print(average)
 plt.figure(figsize=(10,10))
+
+
+#haven't finished!
