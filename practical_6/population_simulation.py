@@ -30,3 +30,11 @@ for population in sample_sizes:
 
 	# Print output
 	print(population, ':', duration)
+
+
+
+
+	#sucess!  at my laptop: scotland= 3s and zhejiang= 45s
+	#and I use it at remote server in two ways: 
+	#first I copy it directly to terminal (with python mode):  scotland=3s and zhejiang= 35s
+	#them I upload it to my file(public/workspace/IBI1_11/liyuming) and run it again, scotland= 15s and it is too long to wait it finish and print zhejiang, so I turn it down.
