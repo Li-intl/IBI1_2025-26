@@ -2,32 +2,25 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# ------------------- 模型参数 -------------------
-grid_size = 100       # 100x100的网格空间
-beta = 0.3           # 感染率
-gamma = 0.05         # 恢复率
-time_steps = 100     # 模拟步数
+grid_size = 100       
+beta = 0.3           
+gamma = 0.05         
+time_steps = 100     
 
-# 网格状态定义：0=易感(S), 1=感染(I), 2=恢复(R)
 grid = np.zeros((grid_size, grid_size), dtype=int)
 
-# 随机初始化1个感染者（核心要求）
 init_x = np.random.randint(0, grid_size)
 init_y = np.random.randint(0, grid_size)
 grid[init_x, init_y] = 1
 
-# 8邻域坐标偏移（上下左右+四个斜角）
 neighbors = [(-1, -1), (-1, 0), (-1, 1),
              (0, -1),          (0, 1),
              (1, -1),  (1, 0), (1, 1)]
 
-# ------------------- 模拟函数 -------------------
 def update(frame):
     global grid
-    # 复制当前网格，避免更新时覆盖原始数据
     new_grid = grid.copy()
     
-    # 遍历所有网格点
     for i in range(grid_size):
         for j in range(grid_size):
             if grid[i, j] == 1:

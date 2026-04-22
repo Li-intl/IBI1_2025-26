@@ -1,0 +1,6 @@
+question:Question: What country or countries have recorded a DALYs less than 18,000 in a single year?
+
+line:64-69
+
+Discussion of Result:
+The output shows the specific country/countries (e.g., San Marino) that achieved extremely low DALYs (< 18,000). This aligns with expectations, as such low values are typically only possible in countries with exceptionally small populations (micro-states) and highly developed healthcare systems, which dramatically limits the absolute number of disability-adjusted life years compared to more populous nations.
