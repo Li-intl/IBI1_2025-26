@@ -6,7 +6,7 @@ import numpy as np
 
 dalys_data = pd.read_csv('dalys-rate-from-all-causes.csv')
 
-# 
+
 print("\nthe first 10 year data of afgan:  ")
 afghan_first_10 = dalys_data.iloc[0:10, 2:4] 
 print(afghan_first_10)
