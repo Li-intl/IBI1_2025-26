@@ -9,3 +9,4 @@ My computer had its operating system reinstalled at the end of April, and all th
 
 I rewrite "practical 4/creatine_clearance.py", using "if, elif" to set different condition. now it will give detailed feedback for wrong input
 I rewrite the "practical 4/mystery_code.py". I read mystery code again and write more detailed information.
+I need to submit the practical 3 through terminal but sorry professors, vscode in my labtop doesn't work and i can only change my work through Github website. I will test my abaility of using Linux, Terminal after I buy a new labtop 
