@@ -8,4 +8,4 @@ My computer had its operating system reinstalled at the end of April, and all th
 
 
 I rewrite "practical 4/creatine_clearance.py", using "if, elif" to set different condition. now it will give detailed feedback for wrong input
-I rewrite the "practical 4/mystery_code.py". I read mystery code again.
+I rewrite the "practical 4/mystery_code.py". I read mystery code again and write more detailed information.
