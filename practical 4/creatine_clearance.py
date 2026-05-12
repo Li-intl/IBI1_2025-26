@@ -1,15 +1,36 @@
-age=float(input("age input "))
-weight=float(input("weight input "))
-Cr=float(input("Cr input "))
-gender=str(input("male or female "))#gender should be male or female
-#first we check these input, if it doesn't fit the condition, we do not start to caculate and output variable needs corrected
-#then we should distinguish male or female and caculate 
-if 0<age<100 and 20<weight<80 and 0<Cr<100 and (gender=="male" or "female"):#if I don't add parentheses,it will result in an error.
-    if gender=="male":
-        CrCl=(140-age)*weight/(72*Cr)
-        print("CrCl is "+ str(CrCl))
-    if gender=="female":
-        CrCl=(140-age)*weight*0.85/(72*Cr)
-        print("CrCl is "+ str(CrCl))
+# 1. Define variables for age, weight, gender, and creatine concentration
+age = 45           # Age in years
+weight = 65        # Weight in kg
+gender = "female"  # Gender: "male" or "female"
+cr = 80            # Creatine concentration in umol/l
+
+# 2. Check if the input values are within the correct ranges
+# Check age: must be less than 100 years
+if age >= 100:
+    print("Error: Age input needs to be corrected (must be < 100 years).")
+
+# Check weight: must be greater than 20 kg and less than 80 kg
+elif weight <= 20 or weight >= 80:
+    print("Error: Weight input needs to be corrected (must be > 20 kg and < 80 kg).")
+
+# Check creatine concentration: must be greater than 0 and less than 100 umol/l
+elif cr <= 0 or cr >= 100:
+    print("Error: Creatine concentration needs to be corrected (must be > 0 and < 100 umol/l).")
+
+# Check gender: must be either 'male' or 'female'
+elif gender != "male" and gender != "female":
+    print("Error: Gender input needs to be corrected (must be 'male' or 'female').")
+
+# 3. If all conditions are met, calculate the creatine clearance rate (CrCl)
 else:
-    print("input variable needs corrected")
+    # Calculate the base formula without gender modifier: (140 - age) * weight / (72 * Cr)
+    numerator = (140 - age) * weight
+    denominator = 72 * cr
+    crcl = numerator / denominator
+    
+    # 4. Apply the gender modifier (multiply by 0.85 if female)
+    if gender == "female":
+        crcl = crcl * 0.85
+        
+    # 5. Output the result using the str() command to convert the number to a string
+    print("The patient's calculated Creatine Clearance (CrCl) is: " + str(crcl))
